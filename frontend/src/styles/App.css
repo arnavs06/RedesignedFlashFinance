@@ -1,19 +1,14 @@
-/* Add Mundial Demi-Bold Font */
-@font-face {
-  font-family: 'Mundial Demi-Bold';
-  src: url('/fonts/Mundial-DemiBold.woff2') format('woff2'),
-       url('/fonts/Mundial-DemiBold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-}
+
 
 /* General Styles */
 body {
-  font-family: 'Mundial Demi-Bold', sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
   line-height: 1.6;
+  font-style: normal;
+  font-family: mundial, sans-serif;
+  font-weight: 600;
 }
 
 h1, h2, h3 {
