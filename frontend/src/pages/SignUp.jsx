@@ -1,21 +1,34 @@
 import React, { useState } from 'react';
+import { supabase } from '../supabaseClient'; // Ensure you have this file set up
 import '../styles/SignUp.css';
 
 const SignUp = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState(null);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add your sign-in logic here
-    console.log('Email:', email);
-    console.log('Password:', password);
+    setError(null);
+
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
+
+    if (error) {
+      setError(error.message);
+    } else {
+      console.log('User signed in:', data);
+      // Redirect user or update UI upon successful sign-in
+    }
   };
 
   return (
     <div className="signin-container">
       <div className="signin-box">
         <h2>Sign In</h2>
+        {error && <p className="error-message">{error}</p>}
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="email">Email</label>
