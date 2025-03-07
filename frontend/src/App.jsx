@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import Landing from './pages/Landing';
 import Flashcard from './pages/Flashcards';
-import SignUp from './pages/Signup';
+import SignUp from './pages/SignUp';
 import Login from './pages/Login';
 import './styles/App.css';
 
