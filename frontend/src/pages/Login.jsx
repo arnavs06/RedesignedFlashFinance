@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom"; // Ensure React Router is installed
 import supabase from "../supabaseClient";
-import "../styles/SignIn.css"; // Reusing the same CSS file
+import "../styles/Login.css"; // Reusing the same CSS file
 
 const Login = () => {
   const [email, setEmail] = useState("");
