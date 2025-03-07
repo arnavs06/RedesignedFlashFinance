@@ -43,7 +43,7 @@ const Header = () => {
         </nav>
 
         {/* CTA Button */}
-        <RouterLink to="/signin" className="cta-link">
+        <RouterLink to="/login" className="cta-link">
           <button className="cta-button">Get Started</button>
         </RouterLink>
 

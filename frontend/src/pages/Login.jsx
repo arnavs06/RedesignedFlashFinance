@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom"; // Ensure React Router is installed
 import supabase from "../supabaseClient";
-import "../styles/SignUp.css"; // Using existing CSS file
+import "../styles/SignIn.css"; // Reusing the same CSS file
 
-const SignUp = () => {
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
@@ -14,7 +14,7 @@ const SignUp = () => {
     setError(null);
     setMessage("");
 
-    const { data, error } = await supabase.auth.signUp({
+    const { data, error } = await supabase.auth.signInWithPassword({
       email,
       password,
     });
@@ -22,15 +22,16 @@ const SignUp = () => {
     if (error) {
       setError(error.message);
     } else {
-      setMessage("Check your email for a confirmation link!");
-      console.log("User registered:", data);
+      setMessage("Login successful! Redirecting...");
+      console.log("User logged in:", data);
+      // Redirect or perform other actions after successful login
     }
   };
 
   return (
-    <div className="signin-container"> {/* Reusing signin styles */}
+    <div className="signin-container">
       <div className="signin-box">
-        <h2>Sign Up</h2>
+        <h2>Login</h2>
         {error && <p className="error-message">{error}</p>}
         {message && <p className="success-message">{message}</p>}
         <form onSubmit={handleSubmit}>
@@ -57,15 +58,16 @@ const SignUp = () => {
             />
           </div>
           <button type="submit" className="signin-button">
-            Sign Up
+            Login
           </button>
         </form>
         <div className="signin-links">
-          <Link to="/login">Already have an account? Login</Link>
+          <Link to="/signup">Don't have an account? Sign Up</Link>
+          <Link to="/forgot-password">Forgot Password?</Link>
         </div>
       </div>
     </div>
   );
 };
 
-export default SignUp;
+export default Login;

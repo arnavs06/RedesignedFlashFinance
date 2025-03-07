@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-rou
 import Landing from './pages/Landing';
 import Flashcard from './pages/Flashcards';
 import SignUp from './pages/Signup';
+import Login from './pages/Login';
 import './styles/App.css';
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/signin" element={<SignUp />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/flashcards" element={<Flashcard flashcard={Flashcard} />} />
         </Routes>
       </div>
