@@ -4,10 +4,9 @@ import Header from '../components/Landing/Header';
 import '../styles/Flashcards.css';
 
 function Flashcards() {
-  // Sample data for flashcards
   const cards = [
     { title: 'FlashFinance', description: 'Best IB/PE learning platform' },
-    { title: 'TechStack', description: 'JavaScript (React), Python (Flask), SQL (MySQL)' },
+    { title: 'TechStack', description: 'do not ask me that' },
     { title: 'Goated?', description: 'Yeah' },
   ];
 

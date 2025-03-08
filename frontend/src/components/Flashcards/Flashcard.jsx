@@ -21,12 +21,12 @@ const Flashcard = ({ cards }) => {
     }
 
     if (newIndex !== currentIndex) {
-      setSwitchingCard(true); // Start animation
+      setSwitchingCard(true); 
       setTimeout(() => {
-        setCurrentIndex(newIndex); // Update index
-        setIsFlipped(false); // Reset flip state
-        setSwitchingCard(false); // End animation
-      }, 300); // Match animation duration
+        setCurrentIndex(newIndex); 
+        setIsFlipped(false); 
+        setSwitchingCard(false); 
+      }, 300); 
     }
   };
 

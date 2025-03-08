@@ -5,7 +5,7 @@
   align-items: center;
   min-height: 80vh;
   margin-top: 80px;
-  perspective: 1500px; /* 3D effect */
+  perspective: 1500px; 
   position: relative;
 }
 
@@ -14,9 +14,9 @@
   width: 600px;
   height: 400px;
   position: absolute;
-  transform-style: preserve-3d; /* Preserve 3D for card flip */
-  transition: transform 0.3s ease, opacity 0.3s ease; /* Faster transition */
-  z-index: 1; /* Cards stack on top of each other */
+  transform-style: preserve-3d; 
+  transition: transform 0.3s ease, opacity 0.3s ease; 
+  z-index: 1; 
 }
 
 .flashcard .front,

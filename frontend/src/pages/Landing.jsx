@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from '../components/Landing/Header'; // Corrected import path
-import Hero from '../components/Landing/Hero'; // Corrected import path
-import Features from '../components/Landing/Features'; // Corrected import path
-import Pricing from '../components/Landing/Pricing'; // Corrected import path
-import Testimonials from '../components/Landing/Testimonials'; // Corrected import path
-import Contact from '../components/Landing/Contact'; // Corrected import path
-import Footer from '../components/Landing/Footer'; // Corrected import path
+import Header from '../components/Landing/Header';  
+import Hero from '../components/Landing/Hero';
+import Features from '../components/Landing/Features';
+import Pricing from '../components/Landing/Pricing';
+import Testimonials from '../components/Landing/Testimonials';
+import Contact from '../components/Landing/Contact';
+import Footer from '../components/Landing/Footer';
 import '../styles/App.css';
 
 function Landing() {

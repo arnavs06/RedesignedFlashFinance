@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Ensure React Router is installed
+import { Link } from "react-router-dom"; 
 import supabase from "../supabaseClient";
-import "../styles/SignUp.css"; // Using existing CSS file
+import "../styles/SignUp.css"; 
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -28,7 +28,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="signin-container"> {/* Reusing signin styles */}
+    <div className="signin-container"> 
       <div className="signin-box">
         <h2>Sign Up</h2>
         {error && <p className="error-message">{error}</p>}

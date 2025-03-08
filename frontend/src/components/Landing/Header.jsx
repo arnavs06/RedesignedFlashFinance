@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Link as ScrollLink } from 'react-scroll'; // Alias for react-scroll Link
-import { Link as RouterLink } from 'react-router-dom'; // Alias for react-router-dom Link
+import { Link as ScrollLink } from 'react-scroll'; 
+import { Link as RouterLink } from 'react-router-dom'; 
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,12 +11,9 @@ const Header = () => {
 
   return (
     <header className="header">
-      {/* Logo on the left */}
       <div className="logo">FlashFinance <img src="/HeaderIcon.png"></img> </div>
 
-      {/* Navigation links and CTA button on the right */}
       <div className="nav-container">
-        {/* Navigation Links */}
         <nav className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
           <ul>
             <li>
@@ -42,12 +39,10 @@ const Header = () => {
           </ul>
         </nav>
 
-        {/* CTA Button */}
         <RouterLink to="/login" className="cta-link">
           <button className="cta-button">Get Started</button>
         </RouterLink>
 
-        {/* Hamburger Icon for Mobile */}
         <div className={`menu-icon ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
           <span></span>
           <span></span>

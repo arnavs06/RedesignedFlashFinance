@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Ensure React Router is installed
+import { Link } from "react-router-dom"; 
 import supabase from "../supabaseClient";
-import "../styles/Login.css"; // Reusing the same CSS file
+import "../styles/Login.css"; 
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -24,7 +24,6 @@ const Login = () => {
     } else {
       setMessage("Login successful! Redirecting...");
       console.log("User logged in:", data);
-      // Redirect or perform other actions after successful login
     }
   };
 
