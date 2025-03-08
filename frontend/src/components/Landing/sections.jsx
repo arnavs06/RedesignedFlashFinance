@@ -15,7 +15,7 @@ const Sections = () => {
 
       <div className="section" id="testimonials">
         <h2>Testimonials</h2>
-        <p>Hear what our users have to say about AI Finance Prep.</p>
+        <p>Hear what our users have to say about Flash Finance.</p>
       </div>
 
       <div className="section" id="contact">
