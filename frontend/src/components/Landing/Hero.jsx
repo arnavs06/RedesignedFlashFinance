@@ -30,7 +30,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="hero-image">
-        <img src="/FlashFinanceLogoNew.png" alt="Flash Finance" />
+       {/*} <img src="/Flash_Finance_Logo.png" alt="Flash Finance" /> */}
       </div>
     </section>
   );
