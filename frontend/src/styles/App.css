@@ -110,7 +110,6 @@ a {
   transition: transform 0.3s, opacity 0.3s;
 }
 
-
 @media (max-width: 768px) {
   .nav-container {
     gap: 20px;
@@ -337,6 +336,7 @@ a {
   color: #ffbc48; 
 }
 
+/* Contact Section */
 .contact {
   padding: 100px 50px;
   text-align: center;
@@ -359,15 +359,42 @@ a {
 
 .contact input,
 .contact textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   font-size: 16px;
+  color: #333;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #34b4e4;
+  box-shadow: 0 0 10px rgba(52, 180, 228, 0.3);
+  outline: none;
 }
 
 .contact textarea {
   resize: vertical;
   min-height: 150px;
+}
+
+.contact .cta-button {
+  background-color: #34b4e4;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact .cta-button:hover {
+  background-color: #2a9ac7;
+  transform: translateY(-3px);
 }
 
 .footer {
@@ -445,5 +472,13 @@ a {
   .testimonial-item {
     width: 100%;
     max-width: 400px;
+  }
+
+  .contact {
+    padding: 50px 20px;
+  }
+
+  .contact form {
+    padding: 20px;
   }
 }

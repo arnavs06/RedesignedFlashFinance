@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -33,6 +33,7 @@ const Contact = () => {
           value={formData.name}
           onChange={handleChange}
           required
+          className="contact-input"
         />
         <input
           type="email"
@@ -41,6 +42,7 @@ const Contact = () => {
           value={formData.email}
           onChange={handleChange}
           required
+          className="contact-input"
         />
         <textarea
           name="message"
@@ -48,8 +50,11 @@ const Contact = () => {
           value={formData.message}
           onChange={handleChange}
           required
+          className="contact-textarea"
         />
-        <button type="submit" className="cta-button">Send Message</button>
+        <button type="submit" className="cta-button">
+          Send Message
+        </button>
       </motion.form>
     </section>
   );
