@@ -18,7 +18,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          Ace your interview, one step at a time
+          Break in, one step at a time
         </motion.p>
         <div className="hero-buttons">
           <Link to="pricing" smooth={true} duration={500}>
