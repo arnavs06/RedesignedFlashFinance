@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <header className="header">
       {/* Logo on the left */}
-      <div className="logo">FlashFinance</div>
+      <div className="logo">FlashFinance <img src="/HeaderIcon.png"></img> </div>
 
       {/* Navigation links and CTA button on the right */}
       <div className="nav-container">
