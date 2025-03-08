@@ -29,7 +29,7 @@ const SignUp = () => {
       // Redirect to Home.jsx after 3 seconds (to allow user to read the message)
       setTimeout(() => {
         navigate("/home"); // Use navigate to redirect
-      }, 3000);
+      }, 1000);
     }
   };
 
