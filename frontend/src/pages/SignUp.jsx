@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; 
+import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
 import supabase from "../supabaseClient";
-import "../styles/SignUp.css"; 
+import "../styles/SignUp.css";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
   const [message, setMessage] = useState("");
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -24,11 +25,16 @@ const SignUp = () => {
     } else {
       setMessage("Check your email for a confirmation link!");
       console.log("User registered:", data);
+
+      // Redirect to Home.jsx after 3 seconds (to allow user to read the message)
+      setTimeout(() => {
+        navigate("/home"); // Use navigate to redirect
+      }, 3000);
     }
   };
 
   return (
-    <div className="signin-container"> 
+    <div className="signin-container">
       <div className="signin-box">
         <h2>Sign Up</h2>
         {error && <p className="error-message">{error}</p>}

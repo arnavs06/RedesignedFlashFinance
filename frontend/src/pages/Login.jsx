@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; 
+import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
 import supabase from "../supabaseClient";
-import "../styles/Login.css"; 
+import "../styles/Login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
   const [message, setMessage] = useState("");
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -24,6 +25,11 @@ const Login = () => {
     } else {
       setMessage("Login successful! Redirecting...");
       console.log("User logged in:", data);
+
+      // Redirect to Home.jsx after 1 second
+      setTimeout(() => {
+        navigate("/home"); // Use navigate to redirect
+      }, 1000);
     }
   };
 
