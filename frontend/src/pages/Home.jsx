@@ -61,7 +61,7 @@ const Home = () => {
             <li><a href="/lbos">LBOs</a></li>
             <li><a href="/brain-teasers">Brain Teasers</a></li>
             <li><a href="/behaviorals">Behaviorals</a></li>
-            <li><a href="/mergers-acquisitions">M&A</a></li>
+            <li><a href="/mergers-acquisitions">Industry Knowledge</a></li>
           </ul>
         </nav>
         <button className="home-cta-button">Logout</button>
@@ -69,8 +69,8 @@ const Home = () => {
 
       {/* Right Side: Categories Grid */}
       <div className="home-content">
-        <h1>Welcome to Your Dashboard</h1>
-        <p>Explore our curated collection of finance learning tools.</p>
+        <h1>Welcome to FlashFinance</h1>
+        <p>Explore & Learn below</p>
 
         <div className="home-categories-grid">
           {categories.map((category) => (
