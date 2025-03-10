@@ -41,9 +41,9 @@ const Home = () => {
     },
     {
       id: 6,
-      name: "Mergers & Acquisitions",
+      name: "Industry Knowledge",
       icon: <FaBuilding className="home-category-icon" />,
-      description: "Explore M&A processes and case studies.",
+      description: "Learn more about the Industry",
       link: "/mergers-acquisitions",
     },
   ];

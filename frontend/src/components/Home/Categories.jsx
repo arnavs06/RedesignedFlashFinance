@@ -40,7 +40,7 @@ const Categories = () => {
     },
     {
       id: 6,
-      name: "Mergers & Acquisitions",
+      name: "Industry Knowledge",
       icon: "🤝",
       description: "Explore M&A processes and case studies.",
       link: "/mergers-acquisitions",
