@@ -1,6 +1,6 @@
 import React from "react";
-import { FaChartLine, FaBook, FaHandshake, FaPuzzlePiece, FaUser, FaBuilding } from "react-icons/fa"; // Modern icons
-import "../styles/Home.css"; // Import the updated CSS
+import { FaChartLine, FaBook, FaHandshake, FaPuzzlePiece, FaUser, FaBuilding } from "react-icons/fa"; 
+import "../styles/Home.css";
 
 const Home = () => {
   const categories = [
