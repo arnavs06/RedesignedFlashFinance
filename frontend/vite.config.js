@@ -3,12 +3,11 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: "/", // Ensures correct routing on Vercel
-  root: '.', // Keep this as '.' since Vercel now starts in 'frontend/'
+  base: "/", // Ensures proper routing on Vercel
   build: {
-    outDir: 'dist', // Ensure Vercel expects 'dist'
+    outDir: "dist",
     rollupOptions: {
-      input: 'index.html', // Explicitly tell Vite to use this file
+      input: "index.html"
     }
   }
 });
