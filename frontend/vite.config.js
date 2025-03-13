@@ -3,11 +3,14 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: "/", // Ensures proper routing on Vercel
+  base: "/", // Ensures correct asset paths on Vercel
   build: {
     outDir: "dist",
     rollupOptions: {
       input: "index.html"
     }
+  },
+  server: {
+    strictPort: true
   }
 });
