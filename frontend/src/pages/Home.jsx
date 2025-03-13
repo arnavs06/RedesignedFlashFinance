@@ -69,7 +69,7 @@ const Home = () => {
 
       {/* Right Side: Categories Grid */}
       <div className="home-content">
-        <h1>Welcome to Flash Finance</h1>
+        <h1>Welcome</h1>
         <p>Explore & Learn below</p>
 
         <div className="home-categories-grid">
