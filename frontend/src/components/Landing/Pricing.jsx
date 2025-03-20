@@ -12,7 +12,7 @@ const Pricing = () => {
     {
       name: "Pro",
       price: "$40",
-      features: ["Flashcards", "Multiple Choice Questions", "Sample Interviews", "Access Forever"],
+      features: ["Flashcards", "Multiple Choice Questions","AI Powered Learning", "Access Forever"],
       recommended: true,
     },
   ];
