@@ -22,7 +22,7 @@ const Features = () => {
 
   return (
     <section className="features" id="features">
-      <h2>Why FlashFinance?</h2>
+      <h2>Why Flash Finance?</h2>
       <div className="feature-list">
         {features.map((feature, index) => (
           <motion.div
