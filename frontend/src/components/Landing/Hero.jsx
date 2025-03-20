@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
-
+import { Link as RouterLink } from 'react-router-dom'; 
 const Hero = () => {
   return (
     <section className="hero">
@@ -21,9 +21,9 @@ const Hero = () => {
           Learn in a Flash.
         </motion.p>
         <div className="hero-buttons">
-          <Link to="pricing" smooth={true} duration={500}>
-            <button className="cta-button primary">Try It Free</button>
-          </Link>
+        <RouterLink to="/login">
+          <button className="cta-button">Try it for free</button>
+        </RouterLink>
           <Link to="features" smooth={true} duration={500}>
             <button className="cta-button secondary">Learn More</button>
           </Link>
