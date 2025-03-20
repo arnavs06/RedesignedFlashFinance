@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "Arnav",
+      quote: Arnav (Developer),
       author: "Hi, I'm Arnav, the lead developer behind Flash Finance.",
     },
     {
