@@ -15,6 +15,13 @@ const Pricing = () => {
       features: ["Flashcards", "Multiple Choice Questions","AI Powered Learning", "Access Forever"],
       recommended: true,
     },
+    {
+      name: "Organization",
+      price: "Please Contact Us",
+      features: ["Flashcards", "Multiple Choice Questions","AI Powered Learning", "Access Forever"],
+      recommended: true,
+      
+    }
   ];
 
   return (
