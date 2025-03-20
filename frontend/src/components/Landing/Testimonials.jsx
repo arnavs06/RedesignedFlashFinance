@@ -4,18 +4,18 @@ import { motion } from 'framer-motion';
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "app is fire dennis and arnav are goated",
-      author: "real user",
+      quote: "Arnav",
+      author: "Hi, I'm Arnav, the lead developer behind Flash Finance.",
     },
     {
-      quote: "got hired at goldman stanley cuz of this",
-      author: "other real user",
+      quote: "Dennis",
+      author: "To be done",
     },
   ];
 
   return (
     <section className="testimonials" id="testimonials">
-      <h2>What Our Students Say</h2>
+      <h2>About Us</h2>
       <div className="testimonial-list">
         {testimonials.map((testimonial, index) => (
           <motion.div
