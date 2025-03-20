@@ -11,14 +11,14 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Learn in a flash.
+        <img src="/nomore.png"></img>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          Break in, one step at a time
+          Learn in a Flash.
         </motion.p>
         <div className="hero-buttons">
           <Link to="pricing" smooth={true} duration={500}>
@@ -30,7 +30,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="hero-image">
-       {/*} <img src="/Flash_Finance_Logo.png" alt="Flash Finance" /> */}
+       {/*<img src="/WhiteTextFFIcon.png" alt="Flash Finance" /> */}
       </div>
     </section>
   );

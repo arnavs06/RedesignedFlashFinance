@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="logo">Flash Finance <img src="/HeaderIcon.png"></img> </div>
+      <div className="logo"><img src="/HeaderIcon.png"></img> </div>
 
       <div className="nav-container">
         <nav className={`nav-links ${isMenuOpen ? 'open' : ''}`}>

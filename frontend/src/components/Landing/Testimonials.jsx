@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "Hi, I'm Arnav, the lead developer behind Flash Finance. knowing the struggle of not being a Finance/Acounting Major, I had sought out to create a product which I would personally use and learn from, and hope to leverage this application in my own recruitment process. If anyone has any questions or anything, feel free to contact us!",
+      quote: "Hi, I'm Arnav, the lead developer behind Flash Finance. knowing the struggle of not being a Finance/Accounting Major, I had sought out to create a product which I would personally use and learn from, and hope to leverage this application in my own recruitment process. If anyone has any questions or anything, feel free to contact us!",
       author: "Arnav, Co-Founder / Lead Developer",
     },
     {
