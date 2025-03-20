@@ -11,8 +11,8 @@ const Pricing = () => {
     },
     {
       name: "Pro",
-      price: "$30/month",
-      features: ["Flashcards", "Multiple Choice Questions", "Sample Interviews"],
+      price: "$40",
+      features: ["Flashcards", "Multiple Choice Questions", "Sample Interviews", "Access Forever"],
       recommended: true,
     },
   ];
