@@ -28,7 +28,7 @@ const Header = () => {
             </li>
             <li>
               <ScrollLink to="testimonials" smooth={true} duration={500} onClick={toggleMenu}>
-                Testimonials
+                About
               </ScrollLink>
             </li>
             <li>
