@@ -83,7 +83,7 @@ const Categories = () => {
       {/* Right Side: Categories Grid */}
       <div className="home-content">
         <h1>Welcome</h1>
-        <p>Explore & Learn below</p>
+        <p>Learn in a Flash</p>
 
         <div className="home-categories-grid">
           {categories.map((category) => (
