@@ -6,7 +6,7 @@ const Features = () => {
   const features = [
     {
       icon: <FaChartLine className="feature-icon" />, // Use FaChartLine for Finance Education
-      title: "The gold standard of Finance Education",
+      title: "The Gold Standard of Finance Education",
       description: "Learn everything you need with our all in 1 product, ensuring you to be ready for your interviews.",
     },
     {
