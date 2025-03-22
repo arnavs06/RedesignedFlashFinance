@@ -1,20 +1,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaChartLine, FaRobot, FaDesktop } from "react-icons/fa";
 
 const Features = () => {
   const features = [
     {
-      icon: "📊",
+      icon: <FaChartLine className="feature-icon" />, // Use FaChartLine for Finance Education
       title: "The gold standard of Finance Education",
       description: "Learn everything you need with our all in 1 product, ensuring you to be ready for your interviews.",
     },
     {
-      icon: "🤖",
+      icon: <FaRobot className="feature-icon" />, // Use FaRobot for AI Integration
       title: "AI Integration",
       description: "Use Artificial Intelligence to bring a whole new level of learning",
     },
     {
-      icon: "🖥️",
+      icon: <FaDesktop className="feature-icon" />, // Use FaDesktop for User-Friendly Interface
       title: "User-Friendly Interface",
       description: "Easy-to-use tools designed for both beginners and experts.",
     },

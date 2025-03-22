@@ -1,51 +1,65 @@
-import React from "react";
-import "../styles/Home.css"; // Import the updated CSS
+import React, { useState } from "react";
+import { FaChartLine, FaBook, FaHandshake, FaPuzzlePiece, FaUser, FaBuilding } from "react-icons/fa"; // Import the icons
+import "../../styles/Home.css"; // Corrected import path
+import QuestionTypeModal from "./QuestionTypeModal"; // Import the modal component
 
 const Categories = () => {
+  const [selectedCategory, setSelectedCategory] = useState(null); // State to manage the selected category
+
   const categories = [
     {
       id: 1,
       name: "Valuation",
-      icon: "📊",
+      icon: <FaChartLine className="home-category-icon" />, // Use FaChartLine icon
       description: "Master valuation techniques and models.",
       link: "/valuation",
     },
     {
       id: 2,
       name: "Accounting",
-      icon: "📚",
+      icon: <FaBook className="home-category-icon" />, // Use FaBook icon
       description: "Learn accounting principles and practices.",
       link: "/accounting",
     },
     {
       id: 3,
       name: "LBOs",
-      icon: "💼",
+      icon: <FaHandshake className="home-category-icon" />, // Use FaHandshake icon
       description: "Understand leveraged buyout strategies.",
       link: "/lbos",
     },
     {
       id: 4,
       name: "Brain Teasers",
-      icon: "🧩",
+      icon: <FaPuzzlePiece className="home-category-icon" />, // Use FaPuzzlePiece icon
       description: "Solve finance-related puzzles and challenges.",
       link: "/brain-teasers",
     },
     {
       id: 5,
       name: "Behaviorals",
-      icon: "🗣️",
+      icon: <FaUser className="home-category-icon" />, // Use FaUser icon
       description: "Prepare for behavioral interview questions.",
       link: "/behaviorals",
     },
     {
       id: 6,
       name: "Industry Knowledge",
-      icon: "🤝",
+      icon: <FaBuilding className="home-category-icon" />, // Use FaBuilding icon
       description: "Explore M&A processes and case studies.",
       link: "/mergers-acquisitions",
     },
   ];
+
+  // Handle category click to open the modal
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(category);
+  };
+
+  // Close the modal
+  const closeModal = () => {
+    setSelectedCategory(null);
+  };
 
   return (
     <div className="home-container">
@@ -68,22 +82,28 @@ const Categories = () => {
 
       {/* Right Side: Categories Grid */}
       <div className="home-content">
+        <h1>Welcome</h1>
+        <p>Explore & Learn below</p>
+
         <div className="home-categories-grid">
           {categories.map((category) => (
             <div
               key={category.id}
               className="home-category-card"
-              onClick={() => (window.location.href = category.link)}
+              onClick={() => handleCategoryClick(category)} // Open modal on click
             >
-              <div className="home-icon-wrapper">
-                <span className="home-category-icon">{category.icon}</span>
-              </div>
+              <div className="home-icon-wrapper">{category.icon}</div>
               <h2>{category.name}</h2>
               <p>{category.description}</p>
             </div>
           ))}
         </div>
       </div>
+
+      {/* Modal */}
+      {selectedCategory && (
+        <QuestionTypeModal category={selectedCategory} onClose={closeModal} />
+      )}
     </div>
   );
 };
